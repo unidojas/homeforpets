@@ -1,0 +1,163 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+.header{
+    min-height: 30vh;
+    width: 100%;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #00b6b8;
+}
+
+.header h1 {
+    margin-left: 7rem;
+    color: #a2dcdd;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.about1 {
+    width: 100% auto;
+    margin-top: 2rem;
+    padding-left: 7rem;
+    line-height: 2rem;
+}
+
+.hero-btn {
+    position: relative;
+    text-decoration: none;
+    margin-top: 2rem;
+    background-color: #a50000;
+    padding: 10px 30px;
+    font-weight: 700;
+    border-radius: 1px;
+    color: white;
+    font-size: 19px;
+    border: none;
+    box-shadow: -5px 5px rgb(0 0 0 / 50%);
+    cursor: pointer;
+    margin-left: 18rem;
+}
+
+.hero-btn:hover {
+    background-color: #c01414;
+}
+
+
+.about2 {
+    width: 100% auto;
+    padding-left: 7rem;
+    line-height: 2rem;
+    background-color: rgb(218, 216, 216);
+}
+
+.about2 h1{
+    font-size: 1.75rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: #00b6b8;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    margin-top: -1rem;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-top: -3rem;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #a50000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 600;
+    background-color: #00b6b8;
+}
+
+.footer p{
+    margin-bottom: 10px;
+}
+
+.footer img{
+    width: 150px;
+}
+
+
+.footer .icons p{
+    margin-left: 10rem;
+    width: 80%;
+    font-size: 12px;
+}

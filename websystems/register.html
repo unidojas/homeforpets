@@ -1,0 +1,40 @@
+<?php
+
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+include_once("connection/connections.php");
+$con = connection();
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.php"><img src="images/logo1.png" alt=""></a>
+        
+    </div>
+    <div class="login-form">
+        <h1>Registration Form</h1>
+        <form action="server.php" method="POST">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit" name="login">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

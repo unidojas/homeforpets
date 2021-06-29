@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bg5.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    margin-top: -1rem;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-top: -3rem;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.nav-links ul li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #a50000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 45%;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.text-box h2{
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 40px;
+    color: white;
+}
+
+/* SELECT BUTTONS */
+
+.select {
+    width: 60%;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    border: 1px solid #a50000;
+    border-radius: 2px;
+}
+
+.hero-btn {
+    position: relative;
+    text-decoration: none;
+    margin-top: 2rem;
+    background-color: #a50000;
+    padding: 10px 30px;
+    font-weight: 900;
+    border-radius: 1px;
+    color: black;
+    font-size: 19px;
+    border: none;
+    box-shadow: -5px 5px rgb(0 0 0 / 50%);
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background: rgb(230, 38, 38); 
+}
+
+/* ADOPTION SECTION */
+
+.adoption {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.adoption h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+
+.adoption p{
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adoption-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.adoption h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.adoption-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color:white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.cta .hero-btn-1 {
+    position: relative;
+    text-decoration: none;
+    margin-top: 2rem;
+    background-color: #a50000;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 1px;
+    color: whitesmoke;
+    font-size: 19px;
+    border: none;
+    box-shadow: -5px 5px rgb(0 0 0 / 50%);
+    cursor: pointer;
+}
+
+.cta .hero-btn-1:hover {
+    background: rgb(230, 38, 38); 
+}
+
+/* ABOUT */
+
+.about {
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100px auto;
+    height: 100%;
+    text-align: center;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    padding-bottom: 5rem;
+    line-height: 1.5rem;
+    background-color: whitesmoke;
+}
+
+.about h1{
+    padding-top: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #00b6b8;
+
+}
+
+.about .hero-btn-1 {
+    position: relative;
+    text-decoration: none;
+    margin-top: 2rem;
+    background-color: #a50000;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 1px;
+    color: whitesmoke;
+    font-size: 19px;
+    border: none;
+    box-shadow: -5px 5px rgb(0 0 0 / 50%);
+    cursor: pointer;
+}
+
+.about .hero-btn-1:hover {
+    background: rgb(230, 38, 38); 
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 600;
+    background-color: #00b6b8;
+}
+
+.footer p{
+    margin-bottom: 10px;
+}
+
+.footer img{
+    width: 150px;
+}
+
+
+.footer .icons p{
+    margin-left: 10rem;
+    width: 80%;
+    font-size: 12px;
+}
